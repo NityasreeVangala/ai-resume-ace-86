@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* CampusCatalyst Color Palette - Purple/Pink Theme */
+    /* CampusCatalyst Color Palette - Purple/Pink Theme (Landing) */
     --background: 0 0% 98%;
     --foreground: 280 60% 8%;
 
@@ -47,6 +47,20 @@ All colors MUST be HSL.
     --gradient-hero: linear-gradient(135deg, hsl(291 70% 17%), hsl(298 42% 34%));
     --gradient-card: linear-gradient(to bottom right, hsl(240 25% 54% / 0.05), hsl(298 42% 34% / 0.05));
     --gradient-accent: linear-gradient(135deg, hsl(298 42% 34%), hsl(240 25% 54%));
+    
+    /* Login/Register Theme (Teal palette) */
+    --auth-dark: 182 75% 12%;       /* #06363D */
+    --auth-primary: 182 76% 19%;    /* #085558 */
+    --auth-medium: 181 77% 25%;     /* #0D6F73 */
+    --auth-light: 182 22% 64%;      /* #84BABF */
+    --auth-bg: 60 20% 93%;          /* #EDEDE9 */
+    
+    /* Student Dashboard Theme (Purple/Pink palette) */
+    --student-dark: 321 54% 18%;    /* #461D3A */
+    --student-primary: 300 34% 25%; /* #502A50 */
+    --student-accent: 331 54% 33%;  /* #7E2A53 */
+    --student-light: 322 38% 59%;   /* #BA71A2 */
+    --student-bg: 300 32% 92%;      /* #ECDOEC */
     
     /* Sidebar */
     --sidebar-background: 0 0% 100%;
@@ -96,6 +110,24 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 300 20% 96%;
     --sidebar-border: 280 30% 20%;
     --sidebar-ring: 300 20% 96%;
+  }
+  
+  /* Auth pages styling */
+  .auth-page {
+    --background: 60 20% 93%;
+    --primary: 182 76% 19%;
+    --primary-foreground: 60 20% 93%;
+    --secondary: 182 22% 64%;
+    --accent: 181 77% 25%;
+  }
+  
+  /* Student pages styling */
+  .student-page {
+    --background: 300 32% 92%;
+    --primary: 300 34% 25%;
+    --primary-foreground: 300 32% 92%;
+    --secondary: 322 38% 59%;
+    --accent: 331 54% 33%;
   }
 }
 

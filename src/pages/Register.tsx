@@ -65,8 +65,10 @@ const Register = () => {
       <Card className="w-full max-w-2xl p-8 animate-scale-in my-8">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <GraduationCap className="h-10 w-10 text-primary" />
-            <span className="text-3xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#085558] to-[#0D6F73] flex items-center justify-center">
+              <GraduationCap className="h-7 w-7 text-white" />
+            </div>
+            <span className="text-3xl font-bold bg-gradient-to-r from-[#085558] to-[#0D6F73] bg-clip-text text-transparent">
               CampusCatalyst
             </span>
           </div>
@@ -221,7 +223,7 @@ const Register = () => {
             </div>
           )}
 
-          <Button type="submit" className="w-full" size="lg">
+          <Button type="submit" className="w-full bg-gradient-to-r from-[#085558] to-[#0D6F73] hover:from-[#06363D] hover:to-[#085558] transition-all duration-300" size="lg">
             Register / Sign Up
           </Button>
 
@@ -230,7 +232,7 @@ const Register = () => {
             <button
               type="button"
               onClick={() => navigate("/login")}
-              className="text-primary hover:underline font-medium"
+              className="text-[#085558] hover:text-[#0D6F73] hover:underline font-medium transition-colors"
             >
               Login here
             </button>
